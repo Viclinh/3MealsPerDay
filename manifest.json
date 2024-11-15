@@ -1,0 +1,18 @@
+{
+    "name": "3 Meals Per Day",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "1": "food.png"
+    }
+
+}
